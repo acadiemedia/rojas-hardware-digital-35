@@ -40,6 +40,11 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-foreground: var(--whatsapp-foreground);
+  --color-whatsapp-hover: var(--whatsapp-hover);
+  --color-primary-glow: var(--primary-glow);
+  --color-primary-deep: var(--primary-deep);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -62,21 +67,40 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.5rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.18 0.02 260);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.18 0.02 260);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.18 0.02 260);
+  /* Bold storefront blue */
+  --primary: oklch(0.42 0.20 255);
+  --primary-foreground: oklch(0.99 0 0);
+  --primary-glow: oklch(0.55 0.22 255);
+  --primary-deep: oklch(0.32 0.18 255);
+  --secondary: oklch(0.96 0.01 255);
+  --secondary-foreground: oklch(0.32 0.18 255);
+  --muted: oklch(0.97 0.005 255);
+  --muted-foreground: oklch(0.45 0.03 255);
+  --accent: oklch(0.95 0.04 255);
+  --accent-foreground: oklch(0.32 0.18 255);
+  /* WhatsApp green */
+  --whatsapp: oklch(0.68 0.17 145);
+  --whatsapp-foreground: oklch(0.99 0 0);
+  --whatsapp-hover: oklch(0.62 0.18 145);
+  /* Gradients & shadows */
+  --gradient-primary: linear-gradient(135deg, var(--primary-deep), var(--primary));
+  --gradient-hero: linear-gradient(135deg, var(--primary) 0%, var(--primary-glow) 100%);
+  --shadow-elegant: 0 10px 30px -10px color-mix(in oklab, var(--primary) 35%, transparent);
+  --shadow-soft: 0 4px 14px -4px color-mix(in oklab, var(--primary) 20%, transparent);
+  --shadow-whatsapp: 0 8px 24px -6px color-mix(in oklab, var(--whatsapp) 50%, transparent);
+  /* Diagonal stripe pattern */
+  --stripes-blue: repeating-linear-gradient(
+    135deg,
+    var(--primary) 0 18px,
+    color-mix(in oklab, var(--primary) 85%, white) 18px 36px
+  );
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.929 0.013 255.508);
