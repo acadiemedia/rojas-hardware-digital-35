@@ -36,6 +36,7 @@ function HomePage() {
   return (
     <SiteLayout>
       {/* HERO */}
+      <img src="/rojas.jpg" alt="Ferretería Rojas" className="w-full h-64 md:h-96 object-cover" />
       <section className="relative overflow-hidden bg-[var(--gradient-hero)] text-primary-foreground">
         <div
           aria-hidden
@@ -43,7 +44,7 @@ function HomePage() {
           style={{ backgroundImage: "var(--stripes-blue)" }}
         />
         <div className="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
-          <div className="inline-flex items-center gap-2 rounded-full bg-primary-foreground/15 px-3 py-1 text-xs font-semibold backdrop-blur">
+          <div className="inline-flex items-center gap-2 rounded-full bg-black/20 px-3 py-1 text-xs font-semibold backdrop-blur">
             <MapPin className="h-3.5 w-3.5" /> {SHOP_LOCATION}
           </div>
           <h1 className="mt-4 text-4xl font-black leading-tight tracking-tight sm:text-5xl md:text-6xl">
@@ -119,7 +120,7 @@ function HomePage() {
               to="/catalogo"
               className="group flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-5 text-center shadow-[var(--shadow-soft)] transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-[var(--shadow-elegant)]"
             >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/25 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <cat.icon className="h-7 w-7" />
               </span>
               <span className="text-sm font-bold text-foreground">{cat.name}</span>

@@ -96,7 +96,7 @@ function ContactoPage() {
                 {["Yape", "Plin", "Efectivo"].map((m) => (
                   <span
                     key={m}
-                    className="rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary"
+                    className="rounded-full bg-primary/25 px-3 py-1 text-sm font-semibold text-primary"
                   >
                     {m}
                   </span>

@@ -48,7 +48,7 @@ function CatalogoPage() {
               className="flex flex-col rounded-xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] transition-shadow hover:shadow-[var(--shadow-elegant)]"
             >
               <header className="flex items-start gap-4">
-                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary/25 text-primary">
                   <cat.icon className="h-7 w-7" />
                 </span>
                 <div>

@@ -1,6 +1,6 @@
 // Single source of truth for WhatsApp wiring across the site.
 // TODO: replace placeholder with the real shop number once provided.
-export const WHATSAPP_NUMBER = "51000000000"; // E.164, no + or spaces
+export const WHATSAPP_NUMBER = "51952331295"; // E.164, no + or spaces
 
 export const SHOP_NAME = "Ferretería Rojas";
 export const SHOP_LOCATION = "Cayma, Arequipa";
